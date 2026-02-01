@@ -79,7 +79,7 @@ export function PlanetDetail() {
                   ease: "easeInOut",
                 },
                 rotate: {
-                  duration: 20,
+                  duration: planet.rotationSpeed,
                   repeat: Infinity,
                   ease: "linear",
                 },
@@ -141,7 +141,7 @@ export function PlanetDetail() {
                   alt={`Recuerdo ${currentImageIndex + 1}`}
                   className="w-full h-full object-cover"
                 />
-                
+
                 {/* Overlay con degradado */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
 
@@ -152,11 +152,10 @@ export function PlanetDetail() {
                       <button
                         key={index}
                         onClick={() => setCurrentImageIndex(index)}
-                        className={`w-3 h-3 rounded-full transition-all ${
-                          index === currentImageIndex
+                        className={`w-3 h-3 rounded-full transition-all ${index === currentImageIndex
                             ? "bg-purple-300 w-8"
                             : "bg-white/40 hover:bg-white/60"
-                        }`}
+                          }`}
                       />
                     ))}
                   </div>

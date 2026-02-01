@@ -78,7 +78,7 @@ export function SolarSystem() {
           >
             {/* Órbita (círculo guía sutil) */}
             <motion.div
-              className="absolute border border-purple-400/20 rounded-full"
+              className="absolute border border-purple-400/20 rounded-full pointer-events-none"
               style={{
                 width: `${planet.orbitRadius * 2}px`,
                 height: `${planet.orbitRadius * 2}px`,
@@ -135,11 +135,19 @@ export function SolarSystem() {
                       `0 0 30px ${planet.glowColor}90, 0 0 60px ${planet.glowColor}50`,
                       `0 0 20px ${planet.glowColor}80, 0 0 40px ${planet.glowColor}40`,
                     ],
+                    rotate: 360, // Rotación individual del planeta
                   }}
                   transition={{
-                    duration: 2.5,
-                    repeat: Infinity,
-                    ease: "easeInOut",
+                    boxShadow: {
+                      duration: 2.5,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                    },
+                    rotate: {
+                      duration: planet.rotationSpeed,
+                      repeat: Infinity,
+                      ease: "linear",
+                    },
                   }}
                 >
                   {/* Brillo del planeta */}

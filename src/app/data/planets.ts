@@ -6,6 +6,7 @@ export interface Planet {
   size: number;
   orbitRadius: number;
   orbitSpeed: number;
+  rotationSpeed: number; // Velocidad de rotación sobre su propio eje (segundos)
   description: string;
   date: string;
   memories: string[];
@@ -21,6 +22,7 @@ export const planetsData: Planet[] = [
     size: 40,
     orbitRadius: 120, // Reducido para móviles
     orbitSpeed: 20,
+    rotationSpeed: 8, // Rotación rápida
     description: "El día en que nuestros caminos se cruzaron por primera vez",
     date: "El comienzo de todo",
     memories: [
@@ -41,6 +43,7 @@ export const planetsData: Planet[] = [
     size: 35,
     orbitRadius: 170, // Reducido para móviles
     orbitSpeed: 30,
+    rotationSpeed: 12, // Rotación moderada
     description: "La noche mágica donde todo comenzó a florecer",
     date: "Una noche inolvidable",
     memories: [
@@ -58,6 +61,7 @@ export const planetsData: Planet[] = [
     size: 45,
     orbitRadius: 220, // Reducido para móviles
     orbitSpeed: 25,
+    rotationSpeed: 10, // Rotación moderada-rápida
     description: "El momento que selló nuestro destino",
     date: "Bajo las estrellas",
     memories: [
@@ -75,6 +79,7 @@ export const planetsData: Planet[] = [
     size: 38,
     orbitRadius: 270, // Reducido para móviles
     orbitSpeed: 35,
+    rotationSpeed: 15, // Rotación lenta
     description: "Los viajes y momentos que compartimos",
     date: "Cada día juntos",
     memories: [
@@ -92,6 +97,7 @@ export const planetsData: Planet[] = [
     size: 42,
     orbitRadius: 320, // Reducido para móviles
     orbitSpeed: 28,
+    rotationSpeed: 18, // Rotación muy lenta
     description: "Celebraciones y recuerdos únicos",
     date: "Fechas grabadas en el corazón",
     memories: [
@@ -109,13 +115,32 @@ export const planetsData: Planet[] = [
     size: 36,
     orbitRadius: 370, // Reducido para móviles
     orbitSpeed: 32,
+    rotationSpeed: 14, // Rotación moderada
     description: "Los sueños que construimos juntos",
     date: "Para siempre",
     memories: [
-      "Planes para el futuro",
-      "Sueños compartidos",
-      "Un amor infinito"
+      "Vernos y estar juntos",
+      "Desaparecer y mudarnos a una casa alejada",
+      "Amarnos para siempre"
     ],
-    images: []
+    images: ["/promesas.png"]
+  },
+  {
+    id: "estrella-especial",
+    name: "Primera Muestra de Afecto",
+    color: "#fff9e6",
+    glowColor: "#ffd700",
+    size: 50,
+    orbitRadius: 0, // No orbita, es especial
+    orbitSpeed: 0,
+    rotationSpeed: 8,
+    description: "Un momento mágico que iluminó nuestro camino",
+    date: "El inicio de algo especial",
+    memories: [
+      "La primera vez que sentí mariposas",
+      "Un gesto que lo cambió todo",
+      "El momento en que supe que eras diferente"
+    ],
+    images: ["/image.png"]
   }
 ];

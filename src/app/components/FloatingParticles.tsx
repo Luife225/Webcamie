@@ -16,9 +16,9 @@ interface FloatingParticlesProps {
   colors?: string[];
 }
 
-export function FloatingParticles({ 
-  count = 20, 
-  colors = ["#ffd9e8", "#e0c3fc", "#a7c7e7", "#ffd89b", "#c4b5fd"] 
+export function FloatingParticles({
+  count = 20,
+  colors = ["#ffd9e8", "#e0c3fc", "#a7c7e7", "#ffd89b", "#c4b5fd"]
 }: FloatingParticlesProps) {
   const [particles, setParticles] = useState<Particle[]>([]);
 
