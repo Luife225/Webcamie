@@ -16,96 +16,95 @@ export interface Planet {
 export const planetsData: Planet[] = [
   {
     id: "primer-encuentro",
-    name: "Primer Encuentro",
+    name: "Primera ves que queria decir que me gustabas",
     color: "#ffd9e8",
     glowColor: "#ff69b4",
     size: 40,
     orbitRadius: 120, // Reducido para móviles
     orbitSpeed: 20,
     rotationSpeed: 8, // Rotación rápida
-    description: "El día en que nuestros caminos se cruzaron por primera vez",
-    date: "El comienzo de todo",
+    description: "El día en que sude frio",
+    date: "(me daba miedo)",
     memories: [
-      "Tus ojos brillaban como estrellas",
-      "La primera sonrisa que me robó el aliento",
-      "El momento en que supe que eras especial"
+      "te hubiera dicho que si ese dia si no fuera porq andaba decaido",
+      "aun recuerdo los camiPoints",
+      "en ese entonces tenias 50 y algo creo"
     ],
     images: [
-      "https://images.unsplash.com/photo-1766041678565-a99558efbc3d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyb21hbnRpYyUyMGNvdXBsZSUyMG1lbW9yeXxlbnwxfHx8fDE3Njk5NzM5NTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "https://images.unsplash.com/photo-1769415244626-74e2245fd277?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdW5zZXQlMjByb21hbnRpYyUyMG1vbWVudHxlbnwxfHx8fDE3Njk5NzM5NTl8MA&ixlib=rb-4.1.0&q=80&w=1080"
+      "/gustas.png"
     ]
   },
   {
     id: "primera-cita",
-    name: "Primera Cita",
+    name: "Primera vez",
     color: "#e0c3fc",
     glowColor: "#a855f7",
     size: 35,
     orbitRadius: 170, // Reducido para móviles
     orbitSpeed: 30,
     rotationSpeed: 12, // Rotación moderada
-    description: "La noche mágica donde todo comenzó a florecer",
-    date: "Una noche inolvidable",
+    description: "La noche mágica donde conoci a mi mayor enemigo",
+    date: "Linda noche",
     memories: [
-      "Risas que llenaron la noche",
-      "Conversaciones hasta el amanecer",
-      "El nerviosismo de tomarnos de la mano"
+      "muchos furros y poca ropa",
+      "aun hablabamos por idv q recuerde",
+      "para colmo no me acuerdo si de vdd fue esta la foto o no XD"
     ],
-    images: []
+    images: ["/priemra.png"]
   },
   {
     id: "primer-beso",
-    name: "Primer Beso",
+    name: "Primer match",
     color: "#ffc4d6",
     glowColor: "#ec4899",
     size: 45,
     orbitRadius: 220, // Reducido para móviles
     orbitSpeed: 25,
     rotationSpeed: 10, // Rotación moderada-rápida
-    description: "El momento que selló nuestro destino",
-    date: "Bajo las estrellas",
+    description: "El momento que donde me ligue de por vida contigo",
+    date: "Obligado a hacer match de furros",
     memories: [
-      "El tiempo se detuvo",
-      "Tu perfume en el aire",
-      "Mariposas en el estómago"
+      "De los mejores experiencias de match que tuve",
+      "me dio ternura como lo pediste",
+      "si te decia que no seguro y llorabas"
     ],
-    images: []
+    images: ["/match.png"]
   },
   {
     id: "aventuras",
-    name: "Nuestras Aventuras",
+    name: "Nuestros momentos juntos",
     color: "#a7c7e7",
     glowColor: "#3b82f6",
     size: 38,
     orbitRadius: 270, // Reducido para móviles
     orbitSpeed: 35,
     rotationSpeed: 15, // Rotación lenta
-    description: "Los viajes y momentos que compartimos",
+    description: "Cada momento junto que nos forma mas y mas como pareja",
     date: "Cada día juntos",
     memories: [
-      "Descubriendo el mundo contigo",
-      "Cada atardecer a tu lado",
-      "Creando historias para contar"
+      "Teniendote cada dia presente",
+      "Despidiendote antes de dormir",
+      "y que la primera persona en escribir sea a ti"
     ],
     images: []
   },
   {
     id: "momentos-especiales",
-    name: "Momentos Especiales",
+    name: "Momento especial",
     color: "#ffd89b",
     glowColor: "#f59e0b",
     size: 42,
     orbitRadius: 320, // Reducido para móviles
     orbitSpeed: 28,
     rotationSpeed: 18, // Rotación muy lenta
-    description: "Celebraciones y recuerdos únicos",
-    date: "Fechas grabadas en el corazón",
+    description: "donde formamos la relacion",
+    date: "donde mi vida cambio por completo",
     memories: [
-      "Cumpleaños sorpresa",
-      "Aniversarios mágicos",
-      "Pequeños detalles que lo significan todo"
+      "Estaba nervioso de cagar la relacion a la semana",
+      "pero me acostumbre a estar siempre contigo",
+      "y pesar que en esa epoca estas de fan de aimp3"
     ],
-    images: []
+    images: ["/comienzo.png"]
   },
   {
     id: "promesas",
@@ -134,12 +133,12 @@ export const planetsData: Planet[] = [
     orbitRadius: 0, // No orbita, es especial
     orbitSpeed: 0,
     rotationSpeed: 8,
-    description: "Un momento mágico que iluminó nuestro camino",
+    description: "Me senti muy comodo y con confianza cuando me escribiste eso",
     date: "El inicio de algo especial",
     memories: [
-      "La primera vez que sentí mariposas",
-      "Un gesto que lo cambió todo",
-      "El momento en que supe que eras diferente"
+      "si estaba malito ese dia si no mal recuerdo",
+      "me dio una buena vista tuya",
+      "me dejaste una buena impresion mi amor"
     ],
     images: ["/image.png"]
   }
